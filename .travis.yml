@@ -9,3 +9,9 @@ install:
 
 script:
     - dotnet build
+
+deploy:
+  provider: azure_web_apps
+  username: $azure_id       # If AZURE_WA_USERNAME isn't set
+  password: $azure_pwd   # If AZURE_WA_PASSWORD isn't set
+  site: azure_deployment_sitename       # If AZURE_WA_SITE isn't set
