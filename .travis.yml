@@ -2,7 +2,7 @@ language: csharp
 solution: CIRelay.sln
 
 mono: none
-dotnet: 2.1
+dotnet: 2.1.300
 
 install:
     - dotnet restore
