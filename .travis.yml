@@ -4,6 +4,8 @@ solution: CIRelay.sln
 mono: none
 dotnet: 2.1.300
 
+install:
+    - dotnet restore
+
 script:
-    - dotnet restore CIRelay
-    - dotnet build CIRelay
+    - dotnet build
