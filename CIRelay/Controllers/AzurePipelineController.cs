@@ -16,7 +16,7 @@ namespace CIRelay.Controllers
             RestRequest request = new RestRequest(Method.POST);
             request.AddHeader("Content-Type", "application/json");
 
-            ITFFFModel model = new ITFFFModel {value1 = "VS", value2 = "Ean", value3 = value};
+            ITFFFModel model = new ITFFFModel {value1 = "[AP]VS", value2 = "Ean", value3 = value};
             var json = JsonConvert.SerializeObject(model);
             request.AddParameter("Image", json, ParameterType.RequestBody);
 
