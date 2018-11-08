@@ -12,4 +12,4 @@ script:
 
 deploy:
   provider: azure_web_apps
-  site: https://cirelay20181102082324.azurewebsites.net       # If AZURE_WA_SITE isn't set
+  site: cirelay20181102082324       # If AZURE_WA_SITE isn't set
